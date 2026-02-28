@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Dhage Mandap - Wedding hall & event venue services">
+    <meta name="keywords" content="mandap, wedding hall, marriage hall, event venue, wedding decoration, mandap decorators">
+    <meta name="author" content="Dhage Mandap">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Title -->
+    <title>Dhage Mandap Decoraters | Premium Event Planning</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-stone-50 font-['Poppins'] overflow-x-hidden">
+
+
+    <!-- ================= TOPBAR ================= -->
+    <div class="w-full bg-red-900 text-white text-sm">
+        <div class="container mx-auto px-6 py-2 flex flex-col md:flex-row justify-between items-center gap-2">
+
+            <!-- Left Info -->
+            <div class="flex flex-wrap items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-phone text-amber-400"></i>
+                    +91 9834781930
+                </span>
+
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-amber-400"></i>
+                    dhagemandapdecoration@gmail.com
+                </span>
+
+                <span class="hidden lg:flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-amber-400"></i>
+                    Nashik,Maharashtra
+                </span>
+            </div>
+
+            <!-- Right Social -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- ================= END TOPBAR ================= -->
+  <!-- ================= NAVBAR ================= -->
+<nav class="sticky top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo -->
+<a href="index.html" class="flex items-center h-12">
+    <img src="assets/images/hero/logo.png"
+         alt="Dhage Events Logo"
+         class="max-h-24 w-auto object-contain">
+</a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 font-medium items-center">
+
+            <li><a href="index.html" class="nav-link">Home</a></li>
+
+            <li><a href="about.html" class="nav-link">About</a></li>
+
+            <li><a href="services.html" class="nav-link">Services</a></li>
+
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+            <!-- WhatsApp -->
+            <li>
+                <a href="https://wa.me/919876543210"
+                   target="_blank"
+                   class="flex items-center gap-2 text-green-600 font-semibold hover:scale-105 transition">
+                    <i class="fab fa-whatsapp"></i> Chat
+                </a>
+            </li>
+
+            <!-- CTA -->
+            <li>
+                <a href="contact.html"
+                   class="bg-red-900 text-white px-6 py-2 rounded-full hover:bg-amber-600 transition font-semibold">
+                    Enquire Now
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile -->
+        <button class="md:hidden text-2xl text-red-900" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-white border-t flex flex-col p-6 space-y-5 text-center">
+
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="gallery.html" class="mobile-link">Gallery</a>
+        <a href="testimonials.html" class="mobile-link">Testimonials</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="contact.html"
+           class="bg-red-900 text-white py-3 rounded-full font-bold">
+           Enquire Now
+        </a>
+    </div>
+</nav>
+
+<!-- ================= GALLERY HERO (Same as Services Theme) ================= -->
+<style>
+/* Slide Up Animation */
+.slide-up {
+    opacity: 0;
+    transform: translateY(70px);
+    animation: slideUp 1.2s ease-out forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Glow */
+.floating-glow {
+    animation: floatGlow 6s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(25px,-20px); }
+    100% { transform: translate(0,0); }
+}
+</style>
+
+
+<section class="h-[60vh] relative flex items-center justify-center text-center text-white overflow-hidden slide-up">
+
+    <!-- Background -->
+    <div class="absolute inset-0">
+        <img src="assets/images/hero/gallerybg.jpg"
+             alt="Wedding Gallery"
+             class="w-full h-full object-cover scale-110 transition duration-[6000ms] hover:scale-100">
+    </div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Same Glow Size -->
+    <div class="absolute w-96 h-96 bg-amber-500 opacity-20 rounded-full blur-3xl floating-glow"></div>
+
+    <!-- Content -->
+    <div class="relative z-20 px-6">
+        <h1 class="text-5xl md:text-6xl font-['Playfair_Display'] mb-4">
+            Our Gallery
+        </h1>
+        <p class="mt-4 tracking-widest uppercase text-sm">
+            Moments Crafted With Elegance
+        </p>
+    </div>
+
+</section>
+<!-- ================= END GALLERY HERO ================= -->
+<!-- ================= GALLERY GRID ================= -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+             <h2 class="text-4xl font-['Playfair_Display'] text-red-900 mb-4">
+                 Wedding and Mandap Highlights
+            </h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <!-- 1 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in">
+                <img src="assets/images/hero/gallery1.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/hero/gallery2.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/hero/gallery3.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in">
+                <img src="assets/images/hero/gallery4.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/hero/gallery5.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/hero/gallery6.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in">
+                <img src="assets/images/hero/gallery7.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/hero/gallery8.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/hero/gallery9.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in">
+                <img src="assets/images/hero/gallery10.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/hero/gallery11.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/hero/gallery12.jpg"
+                     class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= DSL PRO SOUND GALLERY ================= -->
+<section class="py-24 bg-gradient-to-br from-black via-red-950 to-red-900 text-white">
+    <div class="container mx-auto px-6">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-['Playfair_Display'] text-white mb-4">
+                DSL Pro Sound and Lighting Highlights
+            </h2>
+            <div class="w-20 h-1 bg-amber-400 mx-auto mb-4"></div>
+            <p class="max-w-2xl mx-auto text-gray-300">
+                High-energy sound production, immersive lighting, and premium event stage setups.
+            </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <!-- 1 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-xl" data-aos="zoom-in">
+                <img src="assets/images/hero/dsl1.jpg"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition"></div>
+            </div>
+
+            <!-- 2 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-xl" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/hero/dsl2.jpg"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition"></div>
+            </div>
+
+            <!-- 3 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/hero/dsl3.jpg"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition"></div>
+            </div>
+
+            <!-- 4 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-xl" data-aos="zoom-in">
+                <img src="assets/images/hero/dsl4.jpg"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition"></div>
+            </div>
+
+            <!-- 5 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-xl" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/hero/dsl5.jpg"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition"></div>
+            </div>
+
+            <!-- 6 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/hero/dsl6.jpg"
+                     class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURED WEDDING STORIES ================= -->
+<section class="py-24 bg-stone-50">
+    <div class="container mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-['Playfair_Display'] text-red-900 mb-4">
+                Featured Wedding Stories
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Every celebration tells a unique story. Here are some of our most memorable setups.
+            </p>
+            <div class="w-20 h-1 bg-amber-500 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Stories -->
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- Story 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500" data-aos="fade-up">
+                <img src="assets/images/hero/royalpalacetheme.jpg"
+                     class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-red-900 mb-2">
+                        Royal Palace Theme
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        A grand mandap inspired by royal heritage with golden florals and chandelier lighting.
+                    </p>
+                    <span class="text-amber-600 text-sm font-semibold">Nagpur Wedding</span>
+                </div>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500" data-aos="fade-up" data-aos-delay="150">
+                <img src="assets/images/hero/floralgardensetup.jpg"
+                     class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-red-900 mb-2">
+                        Floral Garden Setup
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Soft pastel florals and dreamy lighting created a romantic garden celebration.
+                    </p>
+                    <span class="text-amber-600 text-sm font-semibold">Outdoor Ceremony</span>
+                </div>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/hero/reception.jpg"
+                     class="h-64 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-red-900 mb-2">
+                        Modern Luxury Reception
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Crystal lighting, velvet drapes, and elegant stage styling for a glamorous evening.
+                    </p>
+                    <span class="text-amber-600 text-sm font-semibold">Grand Ballroom</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ================= LUXURY CTA SECTION ================= -->
+<section class="relative py-28 flex items-center justify-center text-center text-white overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="assets/images/hero/createmagic.jpg"
+             class="w-full h-full object-cover scale-110">
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <!-- Gradient Glow -->
+    <div class="absolute inset-0 bg-gradient-to-r from-red-900/40 via-transparent to-amber-600/30"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-3xl px-6" data-aos="fade-up">
+
+        <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] mb-6 leading-tight">
+            Let’s Create Your <span class="text-amber-400">Dream Wedding Experience</span>
+        </h2>
+
+        <p class="text-gray-200 mb-10 text-lg">
+            From royal mandaps to luxury receptions — we transform visions into unforgettable celebrations.
+        </p>
+
+        <!-- CTA Button -->
+        <a href="contact.html"
+           class="relative inline-block px-10 py-4 font-semibold tracking-wide rounded-full bg-amber-500 text-white transition-all duration-500 hover:scale-110 hover:bg-red-800 shadow-xl">
+
+            <span class="relative z-10">Book Your Consultation</span>
+
+            <!-- Button Glow -->
+            <span class="absolute inset-0 rounded-full bg-white opacity-0 hover:opacity-10 transition duration-500"></span>
+        </a>
+
+    </div>
+
+</section>
+
+<!--Footer-->
+    <footer class="bg-stone-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-['Playfair_Display'] font-bold text-white mb-4">
+                    DHAGE <span class="text-amber-600">EVENTS</span>
+                </div>
+                <p class="text-gray-400 max-w-sm">Excellence in event management and decoration since 1998. We create experiences that stay in your heart forever.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="text-gray-400 space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition">Our Story</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                    <li><a href="#gallery" class="hover:text-white transition">Gallery</a></li>
+                    <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-800 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-800 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-800 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-gray-500 text-sm italic">
+            &copy; 2026 Dhage Mandap Decoraters And Events. Designed with Elegance.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init Animations
+        AOS.init({ duration: 1000, once: true });
+
+        // Mobile Menu Logic
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>

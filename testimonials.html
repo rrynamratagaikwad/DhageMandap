@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Dhage Mandap - Wedding hall & event venue services">
+    <meta name="keywords" content="mandap, wedding hall, marriage hall, event venue, wedding decoration, mandap decorators">
+    <meta name="author" content="Dhage Mandap">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Title -->
+    <title>Dhage Mandap Decoraters | Premium Event Planning</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-stone-50 font-['Poppins'] overflow-x-hidden">
+<!-- ================= TOPBAR ================= -->
+    <div class="w-full bg-red-900 text-white text-sm">
+        <div class="container mx-auto px-6 py-2 flex flex-col md:flex-row justify-between items-center gap-2">
+
+            <!-- Left Info -->
+            <div class="flex flex-wrap items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-phone text-amber-400"></i>
+                    +91 9834781930
+                </span>
+
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-amber-400"></i>
+                    dhagemandapdecoration@gmail.com
+                </span>
+
+                <span class="hidden lg:flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-amber-400"></i>
+                    Nashik,Maharashtra
+                </span>
+            </div>
+
+            <!-- Right Social -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- ================= END TOPBAR ================= -->
+  <!-- ================= NAVBAR ================= -->
+<nav class="sticky top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+         <!-- Logo -->
+<a href="index.html" class="flex items-center h-12">
+    <img src="assets/images/hero/logo.png"
+         alt="Dhage Events Logo"
+         class="max-h-24 w-auto object-contain">
+</a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 font-medium items-center">
+
+            <li><a href="index.html" class="nav-link">Home</a></li>
+
+            <li><a href="about.html" class="nav-link">About</a></li>
+
+            <li><a href="services.html" class="nav-link">Services</a></li>
+
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+            <!-- WhatsApp -->
+            <li>
+                <a href="https://wa.me/919876543210"
+                   target="_blank"
+                   class="flex items-center gap-2 text-green-600 font-semibold hover:scale-105 transition">
+                    <i class="fab fa-whatsapp"></i> Chat
+                </a>
+            </li>
+
+            <!-- CTA -->
+            <li>
+                <a href="contact.html"
+                   class="bg-red-900 text-white px-6 py-2 rounded-full hover:bg-amber-600 transition font-semibold">
+                    Enquire Now
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile -->
+        <button class="md:hidden text-2xl text-red-900" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-white border-t flex flex-col p-6 space-y-5 text-center">
+
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="gallery.html" class="mobile-link">Gallery</a>
+        <a href="testimonials.html" class="mobile-link">Testimonials</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="contact.html"
+           class="bg-red-900 text-white py-3 rounded-full font-bold">
+           Enquire Now
+        </a>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<style>
+/* ===== Slide Up Animation ===== */
+.slide-up {
+    opacity: 0;
+    transform: translateY(70px);
+    animation: slideUp 1.2s ease-out forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional glow animation */
+.floating-glow {
+    animation: floatGlow 6s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(20px,-20px); }
+    100% { transform: translate(0,0); }
+}
+</style>
+
+
+<section class="relative h-96 flex items-center justify-center text-center text-white overflow-hidden slide-up">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="assets/images/hero/testimonials.jpg"
+             alt="Testimonials Background"
+             class="w-full h-full object-cover scale-110 transition duration-[6000ms] hover:scale-100">
+    </div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Decorative Glow -->
+    <div class="absolute w-96 h-96 bg-amber-500 opacity-20 rounded-full blur-3xl floating-glow"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 hero-content">
+        <h1 class="text-5xl md:text-6xl font-['Playfair_Display'] mb-4">
+            Client Testimonials
+        </h1>
+        <p class="tracking-widest uppercase text-sm">
+            Real Stories • Real Celebrations
+        </p>
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-['Playfair_Display'] text-red-900 mb-4">
+                Heartwarming Words
+            </h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card bg-stone-50 p-8 rounded-2xl shadow" data-aos="fade-up">
+                <div class="flex text-amber-400 mb-4">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <p class="text-gray-600 italic mb-6">
+                    "The Mandap was absolutely breathtaking. Every detail was perfectly designed. Our wedding looked royal!"
+                </p>
+                <h4 class="font-bold text-red-900">Neha & Mahesh Godhase </h4>
+                <span class="text-sm text-gray-500">Pune Wedding</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card bg-stone-50 p-8 rounded-2xl shadow" data-aos="fade-up" data-aos-delay="150">
+                <div class="flex text-amber-400 mb-4">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <p class="text-gray-600 italic mb-6">
+                    "Professional team, flawless execution. The floral entrance and stage décor were stunning."
+                </p>
+                <h4 class="font-bold text-red-900">Rajesh Patil </h4>
+                <span class="text-sm text-gray-500">Corporate Event</span>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card bg-stone-50 p-8 rounded-2xl shadow" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex text-amber-400 mb-4">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <p class="text-gray-600 italic mb-6">
+                    "From consultation to celebration, everything was smooth. Highly recommended!"
+                </p>
+                <h4 class="font-bold text-red-900">Nilesh Avhad</h4>
+                <span class="text-sm text-gray-500">Destination Wedding</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================= REVIEW SUMMARY ================= -->
+<section class="py-20 bg-stone-50">
+    <div class="container mx-auto px-6 text-center">
+
+        <h3 class="text-3xl font-['Playfair_Display'] text-red-900 mb-6" data-aos="fade-up">
+            Rated 5.0 by Our Happy Clients
+        </h3>
+
+        <!-- Stars -->
+        <div class="flex justify-center text-amber-400 text-3xl mb-4" data-aos="zoom-in">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+
+        <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="150">
+            Over 500+ weddings successfully designed with unmatched creativity, 
+            traditional elegance, and flawless execution.
+        </p>
+
+        <!-- Mini Stats -->
+        <div class="grid md:grid-cols-3 gap-8 mt-12 text-center">
+
+            <div data-aos="fade-up">
+                <h4 class="text-4xl font-bold text-amber-500">500+</h4>
+                <p class="text-gray-500 text-sm mt-2">Events Completed</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="150">
+                <h4 class="text-4xl font-bold text-amber-500">25+</h4>
+                <p class="text-gray-500 text-sm mt-2">Years Experience</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h4 class="text-4xl font-bold text-amber-500">100%</h4>
+                <p class="text-gray-500 text-sm mt-2">Client Satisfaction</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURED STORY ================= -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+        <div data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2070"
+                 class="rounded-2xl shadow-xl">
+        </div>
+
+        <div data-aos="fade-left">
+            <h3 class="text-3xl font-['Playfair_Display'] text-red-900 mb-6">
+                A Royal Pune Wedding
+            </h3>
+            <p class="text-gray-600 mb-6">
+                From concept design to flawless execution, this wedding
+                showcased luxury floral artistry and traditional mandap elegance.
+            </p>
+
+            <a href="gallery.html"
+               class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-amber-600 transition">
+                View Full Story
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="relative py-20 text-white text-center overflow-hidden bg-cover bg-center"
+    style="background-image: url('assets/images/hero/createmagic.jpg');">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/65"></div>
+
+    <!-- Floating Glow -->
+    <div class="absolute w-72 h-72 bg-amber-500 opacity-20 rounded-full blur-3xl floating-glow"></div>
+
+    <div class="relative" data-aos="zoom-in">
+        <h2 class="text-3xl font-['Playfair_Display'] mb-6">
+            Want to Share Your Experience?
+        </h2>
+
+        <p class="mb-8 text-gray-200">
+            We’d love to feature your wedding story with us.
+        </p>
+
+        <a href="contact.html"
+           class="cta-btn bg-amber-500 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-red-900 transition">
+            Submit Your Story
+        </a>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true,
+    easing: "ease-in-out"
+});
+</script>
+
+</body>
+</html>
+<!--Footer-->
+    <footer class="bg-stone-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-['Playfair_Display'] font-bold text-white mb-4">
+                    DHAGE <span class="text-amber-600">EVENTS</span>
+                </div>
+                <p class="text-gray-400 max-w-sm">Excellence in event management and decoration since 1998. We create experiences that stay in your heart forever.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="text-gray-400 space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition">Our Story</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                    <li><a href="#gallery" class="hover:text-white transition">Gallery</a></li>
+                    <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-800 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-800 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-800 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-gray-500 text-sm italic">
+            &copy; 2026 Dhage Mandap Decoraters And Events. Designed with Elegance.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init Animations
+        AOS.init({ duration: 1000, once: true });
+
+        // Mobile Menu Logic
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>

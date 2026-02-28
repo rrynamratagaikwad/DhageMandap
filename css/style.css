@@ -1,0 +1,51 @@
+/* ================= GLOBAL NAVBAR LINKS ================= */
+.nav-link {
+    @apply relative font-medium transition-all duration-300;
+}
+
+/* Underline animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+
+    /* Amber theme underline */
+    background-color: #d97706;
+
+    transition: width 0.3s ease;
+}
+
+/* Hover state */
+.nav-link:hover {
+    @apply text-amber-600;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* ================= FILTER BUTTONS ================= */
+.filter-btn {
+    @apply px-6 py-2 rounded-full border border-red-900 text-red-900 font-medium transition-all duration-300;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    @apply bg-red-900 text-white shadow-md;
+}
+
+
+/* ================= GALLERY ================= */
+.gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
